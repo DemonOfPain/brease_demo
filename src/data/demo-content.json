@@ -1,0 +1,130 @@
+{
+  "sites": [
+    {
+      "id": "site-001",
+      "name": "Corporate Website",
+      "url": "www.example-corp.com",
+      "environments": ["development", "staging", "production"]
+    },
+    {
+      "id": "site-002", 
+      "name": "Blog Platform",
+      "url": "blog.example.com",
+      "environments": ["development", "production"]
+    }
+  ],
+  
+  "pages": [
+    {
+      "id": "page-001",
+      "site_id": "site-001",
+      "name": "Home",
+      "slug": "/",
+      "sections": ["hero", "features", "testimonials", "cta"]
+    },
+    {
+      "id": "page-002",
+      "site_id": "site-001", 
+      "name": "About",
+      "slug": "/about",
+      "sections": ["hero", "team", "history", "values"]
+    }
+  ],
+  
+  "collections": [
+    {
+      "id": "coll-001",
+      "name": "Team Members",
+      "site_id": "site-001",
+      "fields": ["name", "role", "bio", "photo", "social_links"]
+    },
+    {
+      "id": "coll-002",
+      "name": "Blog Posts",
+      "site_id": "site-002",
+      "fields": ["title", "content", "author", "date", "tags"]
+    }
+  ],
+  
+  "entries": [
+    {
+      "id": "entry-001",
+      "collection_id": "coll-001",
+      "name": "John Doe",
+      "data": {
+        "name": "John Doe",
+        "role": "Software Developer",
+        "bio": "Software Developer with 5 years of experience in React, Node.js, and cloud technologies.",
+        "photo": "/images/john-doe.jpg",
+        "social_links": {
+          "linkedin": "linkedin.com/in/johndoe",
+          "github": "github.com/johndoe"
+        }
+      }
+    },
+    {
+      "id": "entry-002",
+      "collection_id": "coll-001",
+      "name": "Jane Smith",
+      "data": {
+        "name": "Jane Smith", 
+        "role": "Product Manager",
+        "bio": "Product Manager with expertise in agile methodologies and user experience design.",
+        "photo": "/images/jane-smith.jpg",
+        "social_links": {
+          "linkedin": "linkedin.com/in/janesmith"
+        }
+      }
+    },
+    {
+      "id": "entry-003",
+      "collection_id": "coll-001",
+      "name": "John Johnson",
+      "data": {
+        "name": "John Johnson",
+        "role": "UX Designer",
+        "bio": "Creative UX Designer focused on creating intuitive and accessible digital experiences.",
+        "photo": "/images/john-johnson.jpg",
+        "social_links": {
+          "portfolio": "johnjohnson.design"
+        }
+      }
+    }
+  ],
+  
+  "documents": [
+    {
+      "name": "company-profile.docx",
+      "size": "2.4 MB",
+      "type": "application/docx",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Welcome to Our Company",
+          "subtitle": "Innovation Through Technology"
+        },
+        {
+          "type": "text",
+          "title": "About Us",
+          "content": "We are a leading technology company specializing in innovative solutions..."
+        },
+        {
+          "type": "text", 
+          "title": "Our Services",
+          "content": "We offer comprehensive services including consulting, development, and support..."
+        },
+        {
+          "type": "team",
+          "title": "Meet the Team",
+          "members": ["John Doe", "Jane Smith", "John Johnson"]
+        },
+        {
+          "type": "contact",
+          "title": "Get in Touch",
+          "email": "contact@example.com",
+          "phone": "+1-555-0123"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CKEditor Overrides */
+:root {
+  --ck-border-radius: 7px !important;
+  --ck-custom-border: #D9DCE4FF !important;
+  --ck-color-focus-border: #D9DCE4FF !important;
+  --ck-color-focus-outer-shadow: #E5E7EBFF !important;
+  --ck-color-focus-disabled-shadow: #E5E7EBFF !important;
+  --ck-color-button-on-background: #E5E7EBFF !important;
+  --ck-color-button-on-hover-background: #D9DCE4FF !important;
+  --ck-color-button-on-active-background: #D9DCE4FF !important;
+}
+
+.ck.ck-icon {
+  @apply !text-brease-gray-9;
+}
+
+.ck.ck-toolbar .ck.ck-toolbar__items .ck.ck-button.ck-on {
+  @apply !bg-brease-gray-2;
+}
+
+.ck.ck-content h1{
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.ck.ck-content h2{
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.ck.ck-content h3 {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.ck.ck-content a {
+  @apply text-blue-500 !underline
+}
+
+.ck.ck-content ul {
+  list-style: disc;
+  margin-left: 18px;
+}
+
+.ck.ck-content ol {
+  list-style: decimal;
+  margin-left: 18px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Golos-Bold';
+  font-weight: 700;
+  src:
+    url('/fonts/GolosText-Bold.woff2') format('woff2'),
+    url('/fonts/GolosText-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golos-SemiBold';
+  font-weight: 600;
+  src:
+    url('/fonts/GolosText-SemiBold.woff2') format('woff2'),
+    url('/fonts/GolosText-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golos-Medium';
+  font-weight: 500;
+  src:
+    url('/fonts/GolosText-Medium.woff2') format('woff2'),
+    url('/fonts/GolosText-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golos-Regular';
+  font-weight: 400;
+  src:
+    url('/fonts/GolosText-Regular.woff2') format('woff2'),
+    url('/fonts/GolosText-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+html {
+  @apply no-scrollbar overscroll-none;
+}
+
+body {
+  @apply focus:!border-transparent focus:!outline-none focus:!ring-0 overscroll-none;
+}
+
+p,
+span,
+blockquote,
+code {
+  @apply text-brease-gray-9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-brease-gray-10;
+}
+
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  @apply w-[6px];
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-brease-gray-5 rounded-full;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brease-gray-6;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
