@@ -4,6 +4,8 @@
 
 **Command:** `update john doe's bio to senior dev`
 
+**Trigger words:** `update` or `change` + `john` or `bio` or `description`
+
 **What it demonstrates:** Natural language content editing with semantic search
 
 **Steps:**
@@ -19,6 +21,8 @@
 ### 2️⃣ Create Page from Document
 
 **Command:** `upload company profile page`
+
+**Trigger words:** `upload` or `document` or `create page from`
 
 **What it demonstrates:** AI converts documents into structured CMS pages
 
@@ -46,6 +50,8 @@
 
 **Command:** `rename contact page to get in touch`
 
+**Trigger words:** `rename` + `contact` or `get in touch`
+
 **What it demonstrates:** Complex updates (URLs, redirects, links) made simple
 
 **Steps:**
@@ -70,6 +76,8 @@
 
 **Command:** `add google analytics`
 
+**Trigger words:** `google analytics` or `tracking` or `script` or `embed`
+
 **What it demonstrates:** Technical integrations via conversation
 
 **Steps:**
@@ -84,6 +92,8 @@
 ### 5️⃣ Remove Team Member
 
 **Command:** `remove john from team`
+
+**Trigger words:** `remove` + `john` or `team` or `member`
 
 **What it demonstrates:** Safe deletion with preview and confirmation
 
